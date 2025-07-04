@@ -14,16 +14,8 @@ This project converts text into speech using **Amazon Polly**, delivers the audi
   - Returns a publicly accessible S3 URL
 - ✅ Terminal script plays the MP3 using `pydub`
 
----
 
-## 📂 Project Structure
 
-aws-text-to-speech-pipeline/
-├── lambda_function.py # AWS Lambda code (Polly + S3)
-├── text_to_speech.py # Local Python CLI tool
-├── requirements.txt # Python dependencies
-├── demo/
-│ └── aws_text_to_speech_terminal_demo.png # Screenshot of terminal demo
-└── README.md
+
 
 
