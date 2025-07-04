@@ -2,16 +2,49 @@
 
 This project converts text into speech using **Amazon Polly**, delivers the audio as an `.mp3` file via **Lambda**, and makes it publicly accessible through **Amazon S3**.
 
+---
+
 ## 🛠️ How It Works
 
-- API Gateway receives text input from the client
-- Triggers a Lambda function that:
-  - Uses **Polly** to synthesize speech
-  - Uploads the `.mp3` to a public **S3 bucket**
-  - Returns the audio file's URL to the client
-- You can run a Python script to instantly hear the result
+- ✅ Text is entered into a terminal command or through API Gateway
+- ✅ API Gateway sends request to Lambda function
+- ✅ Lambda:
+  - Uses Polly to synthesize speech
+  - Saves the audio MP3 in an S3 bucket
+  - Returns a public URL
+- ✅ Your terminal script plays the audio immediately
 
 ---
 
-## 📂 Folder Structure
+## 📂 Project Structure
 
+aws-text-to-speech-pipeline/
+├── lambda_function.py
+├── text_to_speech.py
+├── requirements.txt
+├── demo/
+│ └── aws_text_to_speech_terminal_demo.png
+└── README.md
+
+yaml
+Copy
+Edit
+
+---
+
+## 📷 Demo
+
+![CLI Demo](demo/aws_text_to_speech_terminal_demo.png)
+
+---
+
+## 🧪 Usage (Local Script)
+
+```bash
+python3 text_to_speech.py "Hi"
+Or use your terminal alias:
+
+bash
+Copy
+Edit
+speak "hello"
