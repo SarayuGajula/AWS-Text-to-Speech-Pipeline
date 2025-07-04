@@ -1,0 +1,14 @@
+response = polly.synthesize_speech(
+    Text=text,
+    OutputFormat="mp3",
+    VoiceId=voice
+)
+
+audio_stream = response["AudioStream"].read()
+
+s3.put_object(
+    Bucket="s3-audio-archive",
+    Key=filename,
+    Body=audio_stream,
+    ContentType="audio/mpeg"
+)
