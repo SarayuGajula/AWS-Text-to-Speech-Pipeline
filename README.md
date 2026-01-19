@@ -3,6 +3,16 @@
 This project converts text into speech using **Amazon Polly**, delivers the audio as an `.mp3` file via **AWS Lambda**, and makes it publicly accessible through **Amazon S3**. You can run it locally with a simple command or through an API Gateway integration.
 
 ---
+Architecture
+
+<img width="1373" height="629" alt="Screenshot 2026-01-19 at 4 47 11 PM" src="https://github.com/user-attachments/assets/6f1cfc9a-5cba-4da4-9e13-3356329455ab" />
+
+
+
+
+
+
+
 
 ## 🛠️ How It Works
 
