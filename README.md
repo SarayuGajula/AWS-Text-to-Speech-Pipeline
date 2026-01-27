@@ -16,13 +16,13 @@ Architecture
 
 ## 🛠️ How It Works
 
-- ✅ You enter text via terminal or API Gateway  
-- ✅ API Gateway sends the request to Lambda  
-- ✅ Lambda:
+- You enter text via terminal or API Gateway  
+- API Gateway sends the request to Lambda  
+- Lambda:
   - Uses Amazon Polly to synthesize speech
   - Stores the `.mp3` file in an S3 bucket
   - Returns a publicly accessible S3 URL  
-- ✅ Terminal script plays the MP3 using `pydub`
+- Terminal script plays the MP3 using `pydub`
 
 ---
 
